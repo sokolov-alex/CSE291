@@ -1,0 +1,107 @@
+Phylogenetic tree likelihood prototype
+file		/home/randacs/msc/data/hyphy_models/simple_tests/4taxon_seqln10_3.nex
+#NEXUS
+
+
+
+'A'         GGCCTAATTT
+
+'B'         GACCCAATTA
+
+'C'         GCCCTTACTT
+
+'D'         GGCCTAACTC
+
+
+
+BEGIN TREES
+
+    TREE tree1 = ((D:0.43393,B:0.39988):0.00000,C:0.44971,A:0.00000);
+
+    TREE tree2 = ((D:0.20196,B:0.18845):0.09048,C:0.39382,A:0.00006);
+
+    TREE tree3 = (B:0.38975,(D:0.11069,C:0.32494):0.10444,A:0.00006);
+
+    TREE tree4 = (D:0.50931,(B:0.19093,C:0.57057):0.08352,A:0.00006);
+
+    TREE tree5 = ((A:0.1,C:0.1):0.5,(B:0.1,D:0.1):0.5);
+
+END;
+
+
+
+{'A': 'GGCCTAATTT', 'C': 'GCCCTTACTT', 'B': 'GACCCAATTA', 'D': 'GGCCTAACTC'}
+Display tree:
+  #                            taxon            prev            succ    brlen blen (sum)  support              comment
+  0                                -            None       [1, 4, 5]      0.0        0.0        -                    -
+  1                                -               0          [2, 3]      0.0        0.0        -                    -
+  2                                D               1              []  0.43393    0.43393        -                    -
+  3                                B               1              []  0.39988    0.39988        -                    -
+  4                                C               0              []  0.44971    0.44971        -                    -
+  5                                A               0              []      0.0        0.0        -                    -
+
+Root:  0
+Log likelihood for tree 0 	:	-47.5253747877
+Likelihood of the tree 0 	:	2.29082534469e-21
+Display tree:
+  #                            taxon            prev            succ    brlen blen (sum)  support              comment
+  0                                -            None       [1, 4, 5]      0.0        0.0        -                    -
+  1                                -               0          [2, 3]  0.09048    0.09048        -                    -
+  2                                D               1              []  0.20196    0.29244        -                    -
+  3                                B               1              []  0.18845    0.27893        -                    -
+  4                                C               0              []  0.39382    0.39382        -                    -
+  5                                A               0              []    6e-05      6e-05        -                    -
+
+Root:  0
+Log likelihood for tree 1 	:	-44.3108346395
+Likelihood of the tree 1 	:	5.70228641829e-20
+Display tree:
+  #                            taxon            prev            succ    brlen blen (sum)  support              comment
+  0                                -            None       [1, 2, 5]      0.0        0.0        -                    -
+  1                                B               0              []  0.38975    0.38975        -                    -
+  2                                -               0          [3, 4]  0.10444    0.10444        -                    -
+  3                                D               2              []  0.11069    0.21513        -                    -
+  4                                C               2              []  0.32494    0.42938        -                    -
+  5                                A               0              []    6e-05      6e-05        -                    -
+
+Root:  0
+Log likelihood for tree 2 	:	-44.0511966242
+Likelihood of the tree 2 	:	7.39279025704e-20
+Display tree:
+  #                            taxon            prev            succ    brlen blen (sum)  support              comment
+  0                                -            None       [1, 2, 5]      0.0        0.0        -                    -
+  1                                D               0              []  0.50931    0.50931        -                    -
+  2                                -               0          [3, 4]  0.08352    0.08352        -                    -
+  3                                B               2              []  0.19093    0.27445        -                    -
+  4                                C               2              []  0.57057    0.65409        -                    -
+  5                                A               0              []    6e-05      6e-05        -                    -
+
+Root:  0
+Log likelihood for tree 3 	:	-48.1992494864
+Likelihood of the tree 3 	:	1.16770170997e-21
+Display tree:
+  #                            taxon            prev            succ    brlen blen (sum)  support              comment
+  0                                -            None          [1, 4]      0.0        0.0        -                    -
+  1                                -               0          [2, 3]      0.5        0.5        -                    -
+  2                                A               1              []      0.1        0.6        -                    -
+  3                                C               1              []      0.1        0.6        -                    -
+  4                                -               0          [5, 6]      0.5        0.5        -                    -
+  5                                B               4              []      0.1        0.6        -                    -
+  6                                D               4              []      0.1        0.6        -                    -
+
+Root:  0
+Log likelihood for tree 4 	:	-48.2625395603
+Likelihood of the tree 4 	:	1.09608790722e-21
+-------------------------------------------------------
+Result for trees
+Log likelihood for tree 0 	:	-47.5253747877
+Likelihood of the tree 0 	:	2.29082534469e-21
+Log likelihood for tree 1 	:	-44.3108346395
+Likelihood of the tree 1 	:	5.70228641829e-20
+Log likelihood for tree 2 	:	-44.0511966242
+Likelihood of the tree 2 	:	7.39279025704e-20
+Log likelihood for tree 3 	:	-48.1992494864
+Likelihood of the tree 3 	:	1.16770170997e-21
+Log likelihood for tree 4 	:	-48.2625395603
+Likelihood of the tree 4 	:	1.09608790722e-21
+-------------------------------------------------------

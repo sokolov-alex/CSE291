@@ -1,0 +1,5 @@
+    4   10
+A         TTCAGCTGCT
+B         GTCATCTGCT
+C         TCCAGTTCCT
+D         ATCCGCTGCT

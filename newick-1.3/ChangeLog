@@ -1,0 +1,37 @@
+2008-09-30  Thomas Mailund  <mailund@birc.au.dk>
+
+	* newick/treetest.py: moved unit tests here.
+
+	* newick/parsertest.py: added extensive testing of the parser. 
+
+	* newick/lexer.py, newick/lexertest.py: Moved unit tests to the
+	lexer module, and updated them to use the unittest library.
+
+	* Removed id as a variable name (it is a builtin function in Python).
+
+2006-04-25  Thomas Mailund  <mailund@stats.ox.ac.uk>
+
+	* newick/tree.py: Added properties for extracting leaves and
+	leaves' ids from trees.
+
+	* newick/__init__.py: Major cleanup in the code and refactoring of
+	the modules.
+
+2003-10-04  Thomas Mailund  <mailund@birc.dk>
+
+	* setup.py: moved to using distutils for make distributions
+	(rather than shell scripts)
+
+	* tree.py (TreeBuilder.new_leaf): Handle special case of singleton
+	trees.
+
+	* __init__.py (Parser.parse_leaf): added method for handling
+	leaves.
+
+	* __init__.py (Parser.parse_edge): handle empty labels, either on
+	the form of "_" or actually blank names.
+
+2003-10-03  Thomas Mailund  <mailund@birc.dk>
+
+	* tree.py (TreeVisitor): Added visitor pattern.
+
